@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/8ae03d4b26.js" crossorigin="anonymous"></script>
     <title>Pro TechEdu</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-4 ">
             <div class="container">
                 <div class="container w-25">
-                    <a class="navbar-brand h4" href="#" >
+                    <a class="navbar-brand h4 " href="#" >
                         Pro TechEdu
                     </a>
                 </div>
@@ -40,13 +41,13 @@
                   
                 </ul>
               </div>
-              <div>
-                <form class="d-flex">
+              <div class="">
+                <form class="d-flex d-none d-md-block d-lg-block">
                     
                     <button class="btn btn-outline-success " type="submit">Register</button>
                 </form>
               </div>
-              <div>
+              <div class="">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -257,8 +258,48 @@
                 <h2>Ready to join?</h2>
                 <p>To join with us , you have to Register here,are you ready?</p>
               </div>
+              <!-- Button trigger modal -->
               <div class="col-lg-5 col-md-12 col-sm-12 mt-4 text-center text-lg-end  " >
-                <button class="bg-white border border-0 rounded p-2 ps-lg-4 pe-4 text-primary">Register Now</button>
+                <button class="bg-white border border-0 rounded p-2 ps-lg-4 pe-4 text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Register Now
+                </button>
+              
+              
+                
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <form>
+                          <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                          </div>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             
@@ -290,12 +331,12 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  What is Bootstrap and Talwind?
+                  What is Bootstrap and Talwind CSS?
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>Bootstrap and Tailwind both are css framework.</strong> Bootstrap is component based framework otherhand Tailwind CSS is utility-first framework.
+                  <strong>Bootstrap and Tailwind CSS both are CSS framework.</strong> Bootstrap is component based framework otherhand Tailwind CSS is utility-first framework.
                 </div>
               </div>
             </div>
@@ -355,7 +396,11 @@
         <div class="container p-2">
             <address class="small">Office 41, Zawaya Buildin, Ghala Muscat, </address>
             <address class="small">Sultanate of Oman</address>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
         </div>
+
         
     </footer>
 
